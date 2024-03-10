@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     # Iterate through rows in the Excel file to get device names
     for row in sheet.iter_rows(values_only=True):
-        device_name = row[0]  # Assuming device names are in the first column
+        device_name = row[0]
         
         # Skip empty rows
         if device_name is None:
